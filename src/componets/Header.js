@@ -34,7 +34,7 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar color="info" dark expand="md">
         <NavbarBrand tag={Link} to="/">kittiya.j</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -46,12 +46,22 @@ const Header = (props) => {
               <NavLink tag={Link}to="/contact">ติดต่อเรา</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link}to="/products">สินค้า</NavLink>
+              <NavLink tag={Link}to="/product">สินค้า</NavLink>
             </NavItem>
-            <NavItem>
+            
+          </Nav>
+          <Nav className="ml-auto" navbar>
+              <NavItem>
               <NavLink tag={Link}to="/profile">ข้อมูลส่วนตัว</NavLink>
             </NavItem>
-          </Nav>
+          
+          <NavItem>
+            <NavLink tag={Link} to="/login">เข้าสู่ระบบ</NavLink>
+          </NavItem>
+          <NavItem>
+              <NavLink tag={Link}to="/profile">สมัครสมาชิก</NavLink>
+            </NavItem>
+        </Nav>
         </Collapse>
       </Navbar>
     </div>

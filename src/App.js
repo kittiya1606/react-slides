@@ -12,7 +12,7 @@ import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Header/>
        <Route path="/" exact={true} component={Home}/>
        <Route path="/Contact" component={Contact}/>

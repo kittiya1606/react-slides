@@ -11,17 +11,17 @@ const items = [
   {
     src: './images/pic1.jpg',
     altText: 'Slide 1',
-    caption: 'Slide 1'
+    caption: 'smile'
   },
   {
     src: './images/pic2.jpg',
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'smilingly'
   },
   {
     src: './images/pic3.jpg',
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'me'
   }
 ];
 
@@ -53,8 +53,8 @@ const Slides = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <img src={item.src} alt={item.altText} height="500px" />
+        <CarouselCaption captionHeader={item.caption} />
       </CarouselItem>
     );
   });
